@@ -1,5 +1,4 @@
 //comentário simples única linha
-
 console.log('Linha 1')
 
 /* 
