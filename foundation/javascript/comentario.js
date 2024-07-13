@@ -4,7 +4,8 @@ console.log('Linha 1')
 
 /* 
 comentario
-de multiplas
+de 
+multiplas
 linhas
 */
 console.log('Linha 2')
