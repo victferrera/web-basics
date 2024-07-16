@@ -1,7 +1,7 @@
 // referencia e atribuicao
 
 //referencia é um endereço de memoria que a variavel aponta
-//tipo primitivos fazem cópia por valor
+//tipo primitivos fazem cópia por valor, o identificador fica junto com o valor
 
 //variavel nao inicializada
 let valor
