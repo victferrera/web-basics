@@ -26,4 +26,4 @@ imprimirResultado('Opa')
 
 // comportamento do switch do javascript é meio estranho
 // se ele acha um match, ele executa todos os case que estão abaixo daquele match
-// pra ele não ter esse comportamento, usar o break, pra ele executar somente o match
+// pra ele não ter esse comportamento, usar o break, pra ele executar somente o match e sair do switch
