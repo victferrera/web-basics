@@ -24,26 +24,32 @@
 //         'find': Retorna o índice da tarefa se encontrada, ou -1 se não encontrada.
 //         'update': Atualiza o nome da tarefa no índice fornecido.
 
-let toDoList = ['Learn English', 'Learn JavaScript']
+let toDoList = ['Learn English', 'Learn JavaScript', 'Test task']
 
 const taskToAdd = "Learn how to play guitar"
 const indexToRemove = 2
 
 function manageTasks(command){
-    if(command.action === 'Add') {
-        AddNewTask(command.task)
-    }
-    if(command.action === 'Remove'){
-        RemoveTask(command.index)
-    }
-    if(command.action === 'Find'){
-        FindTask(command.task)
-    }
-    if(command.action === 'List'){
-        ListTasks()
-    }
-    if(command.action === 'Update'){
-        UpdateTask(command.index, command.task)
+    command.action = command.action.toLowerCase();
+
+    switch (command.action) {
+        case 'add': 
+            AddNewTask(command.task)
+            break
+        case 'remove': 
+            RemoveTask(command.task)
+            break
+        case 'find': 
+            FindTask(command.task)
+            break
+        case 'list': 
+            ListTasks()
+            break
+        case 'update': 
+            UpdateTask(command.index, command.task)
+            break
+        default:
+            console.log('Command not found')
     }
 }
 
